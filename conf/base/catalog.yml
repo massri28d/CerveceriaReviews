@@ -1,0 +1,13 @@
+beer_reviews:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/beer_reviews.csv
+  load_args:
+    sep: ","
+  save_args:
+    index: False
+
+top_reviews:
+  type: pandas.CSVDataset  # Cambia 'CSVDataSet' a 'CSVDataset'
+  filepath: data/08_reporting/top_reviews.csv
+  save_args:
+    index: False
