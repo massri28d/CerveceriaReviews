@@ -1,0 +1,1 @@
+{"beer_reviews": {"rows": 1586614, "columns": 13, "file_size": 180174429}, "filtered_beer_reviews": {"rows": 415705, "columns": 13}, "processed_data": {"rows": 1518478, "columns": 13}, "processed_beer_reviews": {"rows": 1518478, "columns": 13}, "top_reviews": {"rows": 50, "columns": 6, "file_size": 2584}}

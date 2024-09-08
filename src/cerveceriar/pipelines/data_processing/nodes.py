@@ -52,6 +52,12 @@ def plot_top_reviews(data: pd.DataFrame):
     plt.show()
 
 
+def data_processing(data: pd.DataFrame):
+    processed_data = load_and_process_data(data)
+    top_reviews = get_top_reviews(processed_data)
+    plot_top_reviews(top_reviews)
+
+
 
 
 
