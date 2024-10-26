@@ -2,7 +2,8 @@ from kedro.pipeline import Pipeline, node
 from .nodes import categorize_review, split_features_target, split_data, train_decision_tree, evaluate_model, visualize_tree
 
 def create_pipeline(**kwargs):
-    return Pipeline(
+    print("Creando pipeline...")
+    pipeline = Pipeline(
         [
             node(
                 func=categorize_review,
@@ -42,3 +43,6 @@ def create_pipeline(**kwargs):
             ),
         ]
     )
+    print("Pipeline creada.")
+    return pipeline
+
