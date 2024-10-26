@@ -1,0 +1,9 @@
+feature_names:
+  - review_time
+  - review_aroma
+  - review_appearance
+  - review_palate
+  - review_taste
+  - beer_abv
+  - beer_beerid
+  - otras_columnas_dummies_si_existen

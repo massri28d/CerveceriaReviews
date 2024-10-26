@@ -12,4 +12,41 @@ top_reviews:
   save_args:
     index: False
 
+raw_data:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/beer_reviews.csv
+  load_args:
+    sep: ","
+  save_args:
+    index: False
+    
+data_categorized:
+  type: MemoryDataset
+
+X:
+  type: MemoryDataset
+y:
+  type: MemoryDataset
+
+X_train:
+  type: MemoryDataset
+X_test:
+  type: MemoryDataset
+y_train:
+  type: MemoryDataset
+y_test:
+  type: MemoryDataset
+
+clf:
+  type: pickle.PickleDataset
+  filepath: data/06_models/decision_tree_model.pkl
+
+accuracy:
+  type: json.JSONDataset
+  filepath: data/08_reporting/accuracy.json
+
+classification_report:
+  type: json.JSONDataset
+  filepath: data/08_reporting/classification_report.json
+
 
