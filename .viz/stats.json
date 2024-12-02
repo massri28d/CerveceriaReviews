@@ -1,1 +1,1 @@
-{"raw_data": {"rows": 1586614, "columns": 13, "file_size": 180174429}, "data_categorized": {"rows": 1586614, "columns": 14, "file_size": null}, "X": {"rows": 1586614, "columns": 8, "file_size": null}, "X_train": {"rows": 1110629, "columns": 8, "file_size": null}, "X_test": {"rows": 475985, "columns": 8, "file_size": null}}
+{"filtered_review_overall": {"rows": 415705, "columns": 13, "file_size": 50228206}, "X_scaled": {"rows": 415705, "columns": 9, "file_size": 74437530}}

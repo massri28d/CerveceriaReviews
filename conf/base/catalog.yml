@@ -49,6 +49,68 @@ classification_report:
   type: json.JSONDataset
   filepath: data/08_reporting/classification_report.json
 
+#fase de nosupervisados
+filtered_review_overall:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/filtered_review_overall.csv
+  load_args:
+    encoding: utf-8
+  save_args:
+    index: false
+
+kmeans_results:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/kmeans_results.csv
+  save_args:
+    index: false
+
+X_scaled:
+  type: pandas.CSVDataset
+  filepath: data/03_primary/X_scaled.csv
+  save_args:
+    index: False
+
+# Resultados de PCA
+pca_data:
+  type: pandas.CSVDataset
+  filepath: data/03_primary/pca_data.csv
+  save_args:
+    index: False
+
+# Resultados de UMAP
+umap_data:
+  type: pandas.CSVDataset
+  filepath: data/03_primary/umap_data.csv
+  save_args:
+    index: False
+
+# Resultados de clustering jerárquico
+linkage_matrix:
+  type: pandas.CSVDataset
+  filepath: data/03_primary/linkage_matrix.csv
+  save_args:
+    index: False
+
+hierarchical_clusters:
+  type: pandas.CSVDataset
+  filepath: data/03_primary/hierarchical_clusters.csv
+  save_args:
+    index: False
+
+# Datos con etiquetas asignadas para visualización o análisis posterior
+clustered_data:
+  type: pandas.CSVDataset
+  filepath: data/03_primary/clustered_data.csv
+  save_args:
+    index: False
+
+# Opcional: visualización de clústeres
+cluster_visualization:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/cluster_visualization.png
+
+_plot_title: "Resultados de Clustering con DBSCAN"
+
 
 
 

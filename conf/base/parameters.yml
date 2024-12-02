@@ -1,3 +1,10 @@
+n_clusters: 4
+k_values: [4]  # Lista con uno o más valores de k
+imputation_strategy: mean
+plot_titles:
+  dbscan: "Resultados de Clustering con DBSCAN"
+  hierarchical: "Resultados de Clustering Jerárquico"
+
 feature_names:
   - review_time
   - review_aroma
